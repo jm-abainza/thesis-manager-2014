@@ -8,9 +8,40 @@ handlers:
 - url: /static
   static_dir: static
 
+- url: /thesis/new
+  script: thesis_manager.application
+  login: required
+  auth_fail_action:/thesis/list 
+
+- url: /adviser/new
+  script: thesis_manager.application
+  login: required
+  auth_fail_action:/_ah/login_required 
+
+- url: /student/new
+  script: thesis_manager.application
+  login: required
+  auth_fail_action:/_ah/login_required 
+
+- url: /thesis/edit/(.*)
+  script: thesis_manager.application
+  login: required
+  auth_fail_action:/_ah/login_required 
+
+- url: /student/edit/(.*)
+  script: thesis_manager.application
+  login: required
+  auth_fail_action:/_ah/login_required 
+
+- url: /adviser/edit/(.*)
+  script: thesis_manager.application
+  login: required
+  auth_fail_action:/_ah/login_required 
+
 
 - url: /.*
   script: thesis_manager.application
+
 
 libraries:
 - name: webapp2

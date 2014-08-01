@@ -40,7 +40,7 @@
             <li class="dropdown">
             <a href="#contact" class="dropdown-toggle" data-toggle="dropdown">Theses<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-                <li><a href="/thesis/new">Add New</a></li>
+                <li><a href="/thesis/new">Add New Thesis</a></li>
                 <li><a href="/thesis/list">View Theses List</a></li>
                 </ul>
             </li>
@@ -56,8 +56,12 @@
             <ul class="dropdown-menu" role="menu">
                 <li><a href="/student/new">Create new Account</a></li>
                 <li><a href="/student/list">View Students List</a></li>
-                </ul>
+                </ul></li>
+
+            <li class="Active"><a href="{{ url|safe }}">{{ url_linktext }}</a>
+           
             </li>
+            
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -112,7 +116,7 @@
       <input type="submit" value="switch">
     </form>
 
-    <a href="{{ url|safe }}">{{ url_linktext }}</a>
+    
 </center>
   </body>
 </html>
