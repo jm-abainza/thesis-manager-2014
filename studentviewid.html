@@ -1,0 +1,29 @@
+<html>
+<head>
+
+	<title>VIEW STUDENT</title>
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <link href="/static/css/bootstrap.theme.css" rel="stylesheet" type="text/css">
+</head>
+<body background= "http://wallsan.com/wp-content/uploads/2014/04/Black-PowerPoint-Cool-Backgrounds.jpg" style="font-famiy: forte; font-size: 14px;">
+	<div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/">Home</a></li>
+          <li><a href="/student/list">View List</a></li>
+          <li><a href="/student/new">Creat New Account</a></li>
+
+        </ul>
+        <h3 class="text-muted">Advanced Web Computing</h3>
+      </div>
+<div class="jumbotron">
+<center>
+<h4>These Are the Details of the Student account you want to view:</h4>
+<br><b>Name: {{student.first_name}} {{student.last_name}} </b><br><b> Email: {{student.email}}</b><br> <b>Student number:  {{student.student_number}}</b></center>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

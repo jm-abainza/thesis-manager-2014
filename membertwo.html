@@ -1,0 +1,81 @@
+<html>
+<head>
+	<style>
+body{
+	background-repeat: no-repeat;
+	background-size: 200%;
+}
+table, tr, td, th{
+	border: solid;
+
+}
+img
+{
+	border:solid;
+}
+	</style>
+	<title>Joel Jr. R. Ordas Personal website</title>
+</head>
+<body background= "http://www.designsnext.com/wp-content/uploads/2014/04/nature-wallpapers-5.jpg" style="font-famiy: forte; font-size: 14px; color: violet">
+<center><img src="https://z-n.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-xaf1/t1.0-9/1508043_402976106514635_1159258959_n.jpg" width="150" height="150">
+	<h1>Joel Jr. R. Ordas</h1>
+	<table>
+	<tr style="border: solid; border-color: white">
+	<td colspan= "1px"><p align = "middle" style ="font-size = 9px; font-family: Times New Roman; font-color: white;"><i>"HAPPINESS can make miracles"</i></p></td>
+	</tr>
+</table> <br> 
+<br>
+<br>
+
+<table>
+  <tr style="border: solid; border-color: white">
+  <td colspan= "1px"><p align = "middle" style ="font-size = 9px; font-family: Times New Roman; font-color: white;"><br>
+<br>
+	Hello there!  <br>I"m Joel Jr. R. Ordas. You can call me batibot. <br> I am a fifth year student taking up Bachelor of Science In Computer Engineering. <br> I am proud to present to you my own WEBPAGE
+   <br>
+   <br>
+	Contact Details: 
+   <br>
+	 09068826771 <br>
+	joelordasjr@gmail.com<br>
+<br>
+  </p></td>
+  </tr>
+</table> <br> <br>
+	 Most visited websites
+   <br>
+   <br>
+   <br>
+   <center>
+<a href="https://www.facebook.com/joel.ordas.58"><img src="http://www.adverblog.com/wp-content/uploads/2012/12/fb_logo_small-300x201.jpg" width="48px" height="48px"></a><br>
+<a href="http://www.codecademy.com/"><img src="http://www.educationalappstore.com/images/upload/9250-logo-9250-logo-mzl.bmszoffb.png" width="48px" height="48px"></a>
+
+<a href="https://github.com/"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNVhg9-zdcVjgxoxWpwNfrjnLzcDHoDZJQYpumSRyLnKX6KyGw" width="48px" height="48px"></a><br></center>
+<center><p> You are Free to judge me: <br> NOTE : NEGATIVE COMMENTS CAN CAUSE ERROR !!!!!</p>
+
+  {% for greeting in greetings %}
+      {% if greeting.author %}
+        <b>{{ greeting.author.nickname() }}</b> wrote:
+      {% else %}
+       A stalker of mine wrote:
+      {% endif %}
+      <blockquote>{{ greeting.content }}</blockquote>
+    {% endfor %}
+
+    <form action="/sign2?guestbook_name={{ guestbook_name }}" method="post">
+      <div><textarea name="content" rows="3" cols="40"></textarea></div>
+      <div><input type="submit" value="Sign Guestbook"></div>
+    </form>
+
+    <hr>
+
+    <form>Guestbook name:
+      <input value="{{ guestbook_name }}" name="guestbook_name">
+      <input type="submit" value="switch">
+    </form>
+      <a href="{{ url|safe }}">{{ url_linktext }}</a>
+      </center>
+
+
+</body>
+</html>

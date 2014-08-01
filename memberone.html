@@ -1,0 +1,86 @@
+<html>
+<head>
+	 <style>
+body{
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+table, tr, td, th{
+  border: solid;
+  border-radius: 40px;
+
+}
+img
+{
+  border:solid;
+}
+  </style>
+  <title>John Michael G. Abainza Personal website</title>
+</head>
+<body background= "http://www.wall321.com/thumbnails/detail/20120302/night%20moon%20skyscapes%201280x800%20wallpaper_www.wall321.com_32.jpg" style="font-famiy: forte; font-size: 14px; color: pink">
+<center><img src="https://z-n.ak.fbcdn.net/z-1-scontent-b.xx/hphotos-xpf1/t1.0-9/1779042_630371603678280_1740946548_n.jpg" width="175" height="150"><br><br>
+  <table>
+  <tr style="border: solid; border-color: white">
+  <td colspan= "1px"><p align = "middle" style ="font-size = 9px; font-family: Times New Roman; font-color: white;"><i><strong>&nbsp;"You write your own destiny este WEBPAGE"&nbsp;</i></strong></p></td>
+  </tr>
+</table>
+ <table>&nbsp;
+   <tr style="border: solid; border-color: white">
+  <td colspan= "1px"><p align = "middle" style ="font-size = 9px; font-family: Times New Roman; font-color: white;">
+  <h1>&nbsp;<center>John Michael G. Abainza</center></h1>
+<center>
+  I"m John Michael G. Abainza. I am a fifth year student taking up <br> Bachelor of Science In Computer Engineering<br> in Polytechnic University of the Philippines.&nbsp;
+</center>
+<br>   
+<br>
+<br>
+<br>
+<br>
+   <p align = "middle" style ="font-size = 9px; font-family: Times New Roman; font-color: white;"> &nbsp;Contact Details:
+   09057820683
+  jm.abainza10@gmail.com
+  &nbsp;</p>
+<br>
+
+<center> <p>Social links:</p>
+<a href="https://www.facebook.com/joel.ordas.58"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCR8B1_jjuwi7Eh1TjLPEzSe4kvmHyd7MHWGnw6cUUVCoJMgHfjg" width="48px" height="48px"></a>
+
+<a href="http://www.codecademy.com/"><img src="http://www.educationalappstore.com/images/upload/9250-logo-9250-logo-mzl.bmszoffb.png" width="48px" height="48px"></a>
+
+<a href="https://github.com/"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNVhg9-zdcVjgxoxWpwNfrjnLzcDHoDZJQYpumSRyLnKX6KyGw" width="48px" height="48px"></a><br>
+</center>
+<br>
+<br>
+<br>
+
+<center>
+  <p><strong>My followers comments</strong></p>
+  <br>
+
+  {% for greeting in greetings %}
+      {% if greeting.author %}
+        <b>{{ greeting.author.nickname() }}</b> wrote:
+      {% else %}
+       One of your avid fans wrote:
+      {% endif %}
+      <blockquote>{{ greeting.content }}</blockquote>
+    {% endfor %}
+
+    <form action="/sign1?guestbook_name={{ guestbook_name }}" method="post">
+      <div><textarea name="content" rows="3" cols="60"></textarea></div>
+      <div><input type="submit" value="Sign Guestbook"></div>
+    </form>
+
+    <hr>
+
+    <form>Guestbook name:
+      <input value="{{ guestbook_name }}" name="guestbook_name">
+      <input type="submit" value="switch">
+    </form>
+      <a href="{{ url|safe }}">{{ url_linktext }}</a>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+</center>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>VIEW THESIS</title>
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <link href="/static/css/bootstrap.theme.css" rel="stylesheet" type="text/css">
+</head>
+<body background= "http://wallsan.com/wp-content/uploads/2014/04/Black-PowerPoint-Cool-Backgrounds.jpg" style="font-famiy: forte; font-size: 14px;">
+<div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/">Home</a></li>
+          <li><a href="/thesis/list">View List</a></li>
+          <li><a href="/thesis/new">Creat New Account</a></li>
+
+        </ul>
+        <h3 class="text-muted">Advanced Web Computing</h3>
+      </div>
+<div class="jumbotron">
+	<center>
+	<h3> These are the informations you want to view:</h3>
+<strong><br>Thesis Title: {{thesis.title}} <br><br></strong><strong>
+Thesis Description: {{thesis.description}} <br><br></strong><strong> School Year: {{thesis.schoolyear}}<br><br></strong><strong> Status: {{thesis.status}}</strong>
+</center>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+
+	<title>Edit Adviser Account</title>
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <link href="/static/css/bootstrap.theme.css" rel="stylesheet" type="text/css">
+</head>
+<body background= "http://wallsan.com/wp-content/uploads/2014/04/Black-PowerPoint-Cool-Backgrounds.jpg" style="font-famiy: forte; font-size: 14px;">
+	<div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/">Home</a></li>
+          <li><a href="/adviser/list">View List</a></li>
+        </ul>
+        <h3 class="text-muted">Advanced Web Computing</h3>
+      </div>
+<div class="jumbotron">
+        <center>
+	<h2>Complete the required informations <br>below to add your created thesis to our list:</h2>
+<br><br><br><br>
+
+	
+
+<form method="POST" action="/adviser/edit/{{adviser.key.id}}">
+	<div><strong>Title</strong>
+		<br>
+	<select name="title">
+		<option>Mr.</option>
+		<option>Ms.</option>
+		<option>Mrs.</option>
+		<option>Dr.</option>
+		<option>Engr.</option>
+	</select></div><br>
+	<div><strong>Firstname</strong><br>
+	<input type="text" name="firstname" value="{{adviser.firstname}}">
+	</div><br>
+	<div><strong>Lastname</strong>
+		<br>
+	<input type="text" name="lastname"  value="{{adviser.lastname}}">
+	</div><br>
+	<div><strong>Email</strong><br>
+	<input type="email" name="email"  value="{{adviser.email}}">
+	</div><br>
+	<div><strong>Phone Number:</strong><br>
+	<input type="text" name="phonenumber"  value="{{adviser.phonenumber}}">
+	<br>
+
+	</div><br>
+	<div><strong>Department</strong>
+		<br>
+	<select name="department">
+		<option>CpE</option>
+		<option>ECE</option>
+		<option>EE</option>
+		<option>IE</option>
+		<option>ME</option>
+		<option>CE</option>
+	</select><br><br>
+	<div><input type="submit" value="SAVE"></div>
+
+</form>
+
+</body>
+</html>
